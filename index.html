@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ny Kanto RASOLOFONJATOVO - Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Ny Kanto<span class="dot">.</span></div>
+        
+        <ul class="menu">
+            <li><a href="#apropos" class="nav-anchor">À propos</a></li>
+            <li><a href="#competences" class="nav-anchor">Compétences</a></li>
+
+            <li class="divider"></li>
+
+            <li><a href="parcours.html" class="nav-page">Parcours</a></li>
+            <li><a href="projets.html" class="nav-page">Portfolio</a></li>
+            <li><a href="contact.html" class="nav-page">Contact</a></li>
+
+            <li>
+                <a href="mon-cv.pdf" target="_blank" class="btn-cv-minimal">
+                    CV 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 0 0-.708.708l3 3z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-layout">
+            
+            <div class="hero-text">
+                <p class="subtitle">Étudiante Ingénieure & Passionnée</p>
+                <h1>Ny Kanto<br>Rasolofonjatovo<span class="dot">.</span></h1>
+                <p class="description">
+                    Future ingénieure en <strong>Cybersécurité</strong> à l'ENSIBS. 
+                    J'aime créer, coder et sécuriser les systèmes de demain.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="parcours.html" class="btn btn-line">Mon CV</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <img src="images/ma-photo.jpg" alt="Ny Kanto Rasolofonjatovo">
+            </div>
+        </div>
+    </header>
+
+    <section id="apropos" class="about-section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+
+            <div class="tabs-container">
+                <button class="tab-btn" onclick="openTab(event, 'Profil')" id="defaultOpen">👤 Mon Profil</button>
+                <button class="tab-btn" onclick="openTab(event, 'Langues')">🌍 Langues</button>
+                <button class="tab-btn" onclick="openTab(event, 'SoftSkills')">🧠 Soft Skills</button>
+                <button class="tab-btn" onclick="openTab(event, 'Passions')">❤️ Passions</button>
+            </div>
+
+            <div id="Profil" class="tab-content">
+                <div class="tab-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je m'appelle <strong>Ny Kanto</strong>, j'ai 18 ans et je suis étudiante en 1ère année de cycle préparatoire intégré à l'<strong>ENSIBS Lorient</strong>.</p>
+                    <p>Originaire de Madagascar, je suis une personne très indépendante et rigoureuse. Mon parcours m'a menée du Lycée Alliance Française (Bac Mention TB) jusqu'à la Bretagne pour réaliser mon rêve : devenir ingénieure en Cybersécurité.</p>
+                </div>
+                <div class="tab-image">
+                    <img src="images/profil-large.webp" alt="Ny Kanto Profil">
+                </div>
+            </div>
+
+            <div id="Langues" class="tab-content">
+                <div class="tab-text">
+                    <h3>Mes Langues</h3>
+                    <ul class="detailed-list">
+                        <li><strong>🇫🇷 Français :</strong> Niveau C2 (Langue de scolarisation & maternelle).</li>
+                        <li><strong>🇬🇧 Anglais :</strong> Niveau C1 (Courant, capable de travailler en environnement anglophone).</li>
+                        <li><strong>🇲🇬 Malgache :</strong> Langue maternelle.</li>
+                        <li><strong>🇪🇸 Espagnol :</strong> Niveau B1 (Notions scolaires).</li>
+                    </ul>
+                </div>
+                <div class="tab-image">
+                    <img src="images/langues.jpg" alt="International">
+                </div>
+            </div>
+
+            <div id="SoftSkills" class="tab-content">
+                <div class="tab-text">
+                    <h3>Mes Atouts Personnels</h3>
+                    <div class="tags-large">
+                        <span class="tag">Rigueur & Organisation</span>
+                        <span class="tag">Autonomie</span>
+                        <span class="tag">Travail d'équipe</span>
+                        <span class="tag">Adaptabilité</span>
+                        <span class="tag">Aisance orale</span>
+                    </div>
+                    <p style="margin-top: 1rem;">Grâce à mes expériences (comme ma mission chez <em>Ny Ask</em> ou mon stage chez <em>DHL</em>), j'ai appris à m'adapter rapidement au monde de l'entreprise.</p>
+                </div>
+                <div class="tab-image">
+                    <img src="images/teamwork.webp" alt="Travail d'équipe">
+                </div>
+            </div>
+
+            <div id="Passions" class="tab-content">
+                <div class="tab-text">
+                    <h3>Ce qui m'anime</h3>
+                    <ul class="detailed-list">
+                        <li><strong>🎭 Théâtre :</strong> Pratiqué depuis 2025 à l'UBS. M'aide pour la prise de parole en public.</li>
+                        <li><strong>💃 Danse :</strong> Salsa, Ballroom et Step (3 ans de pratique).</li>
+                        <li><strong>🤖 Robotique :</strong> Membre active du projet "Colossus 2.0" (Robot de sauvetage).</li>
+                        <li><strong>🥋 Sport :</strong> Self-défense et Basket.</li>
+                    </ul>
+                </div>
+                <div class="tab-image">
+                    <img src="images/hobbies.jpg" alt="Passions">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences Techniques</h2>
+            
+            <div class="skills-categories">
+                
+                <div class="skill-category">
+                    <h3>💻 Programmation</h3>
+                    <div class="skill-items">
+                        <div class="skill-card" style="--percent: 90%;">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">90%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 75%;">
+                            <span class="skill-name">C / C++</span>
+                            <span class="skill-percentage">75%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 60%;">
+                            <span class="skill-name">NXC (Robotique)</span>
+                            <span class="skill-percentage">60%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🌐 Web & Data</h3>
+                    <div class="skill-items">
+                        <div class="skill-card" style="--percent: 90%;">
+                            <span class="skill-name">HTML / CSS</span>
+                            <span class="skill-percentage">80%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 50%;">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">50%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 70%;">
+                            <span class="skill-name">SQL (Bases de données)</span>
+                            <span class="skill-percentage">80%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🛠️ Outils & Systèmes</h3>
+                    <div class="skill-items">
+                        <div class="skill-card" style="--percent: 80%;">
+                            <span class="skill-name">Linux</span>
+                            <span class="skill-percentage">60%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 40%;">
+                            <span class="skill-name">GitHub / Git</span>
+                            <span class="skill-percentage">40%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-card" style="--percent: 95%;">
+                            <span class="skill-name">Pack Office</span>
+                            <span class="skill-percentage">95%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                         <div class="skill-card" style="--percent: 90%;">
+                            <span class="skill-name">Canva / Design</span>
+                            <span class="skill-percentage">90%</span>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Sélection de projets</h2>
+            
+            <div class="projects-grid">
+                
+                <article class="project-card-safe">
+                    <div class="card-header">
+                        <img src="images/robot.png" alt="Robot Colossus">
+                    </div>
+                    <div class="card-body">
+                        <h3>Robot Colossus 2.0</h3>
+                        <p>Robot de sauvetage autonome conçu en C++ et Arduino.</p>
+                        <a href="projets.html" class="link-arrow">Voir le détail →</a>
+                    </div>
+                </article>
+
+                <article class="project-card-safe">
+                    <div class="card-header">
+                        <img src="images/cyber.png" alt="CTF Cyber" class="img-entiere">
+                    </div>
+                    <div class="card-body">
+                        <h3>Challenge CSAW</h3>
+                        <p>Analyse de vulnérabilités et cryptographie (CTF).</p>
+                        
+                        <div class="card-links">
+                            <a href="projets.html" class="link-arrow">Détails</a>
+                            <span class="divider-small">|</span>
+                            <a href="https://www.csaw.io/" target="_blank" class="link-external">Site Officiel ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card-safe">
+                    <div class="card-header">
+                        <img src="images/web.svg" alt="Site Web">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mon Portfolio</h3>
+                        <p>Développement de ce site personnel en HTML/CSS.</p>
+                        
+                        <div class="card-links">
+                            <a href="projets.html" class="link-arrow">Détails</a>
+                            <span class="divider-small">|</span>
+                            <a href="https://github.com/NyKanto-R/Portfolio" target="_blank" class="link-external">GitHub ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Ny Kanto R. - Étudiante ENSIBS</p>
+            
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/ton-profil/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/NyKanto-R" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/ton-profil" target="_blank">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
