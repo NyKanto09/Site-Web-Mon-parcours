@@ -6,126 +6,134 @@
     <title>Mes Projets - Ny Kanto</title>
     
     <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Ny Kanto<span class="dot">.</span></div>
-        <ul class="menu">
-            <li><a href="index.html" class="nav-page">Accueil</a></li>
-            <li class="divider"></li>
-            <li><a href="parcours.html" class="nav-page">Parcours</a></li>
-            <li><a href="projets.html" class="nav-page active-page">Portfolio</a></li>
-            <li><a href="contact.html" class="nav-page">Contact</a></li>
+    <nav class="menu-principal">
+        <div class="logo">Ny Kanto<span class="point-logo">.</span></div>
+        <ul class="liens-navigation">
+            <li><a href="index.html" class="lien-page">Accueil</a></li>
+
+            <li class="separateur"></li>
+
+            <li><a href="parcours.html" class="lien-page">Parcours</a></li>
+            <li><a href="projets.html" class="lien-page">Portfolio</a></li>
+            <li><a href="contact.html" class="lien-page">Contact</a></li>
+
             <li>
-                <a href="mon-cv.pdf" target="_blank" class="btn-cv-minimal">
+                <a href="mon-cv.pdf" target="_blank" class="bouton-cv">
                     CV 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 0 0-.708.708l3 3z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 0 0-.708.708l3 3z"/>
+                    </svg>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <header class="page-header">
+    <header class="en-tete-page">
         <div class="container">
-            <p class="subtitle">Réalisations & Code</p>
+            <p class="sous-titre">Réalisations & Code</p>
             <h1>Mon Portfolio</h1>
             <p class="description">Une sélection de mes projets académiques et personnels en robotique, cybersécurité et développement web.</p>
         </div>
     </header>
 
-    <section class="portfolio-list">
+    <section class="liste-projets">
         <div class="container">
 
-            <article class="project-item">
-                <div class="project-visual">
+            <article class="article-projet">
+                <div class="visuel-projet">
                     <img src="images/robot.png" alt="Robot Colossus 2.0">
                 </div>
-                <div class="project-info">
-                    <span class="project-year">2026 - En cours</span>
+                
+                <div class="info-projet">
+                    <span class="annee-projet">2026 - En cours</span>
                     <h2>Robot de Sauvetage "Colossus 2.0"</h2>
                     
-                    <div class="tech-tags">
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">Arduino / NXC</span>
-                        <span class="tech-tag">Modélisation 3D</span>
+                    <div class="tags-technos">
+                        <span class="tag-techno">C++</span>
+                        <span class="tag-techno">NXC</span>
+                        <span class="tag-techno">Travail d'équipe</span>
                     </div>
                     
                     <p>
                         Dans le cadre d'un projet académique à l'ENSIBS, je participe à la conception d'un robot mobile autonome.
                         Son objectif est de localiser une balise de détresse en terrain accidenté.
                     </p>
-                    <ul class="project-details">
+                    <ul class="details-projet">
                         <li>🎯 <strong>Objectif :</strong> Navigation autonome et détection de signal.</li>
                         <li>⚙️ <strong>Mon rôle :</strong> Programmation des capteurs et logique de déplacement.</li>
                     </ul>
                     
-                    <div class="project-actions">
-                        <span class="status-badge">Projet en cours</span>
+                    <div class="actions-projet">
+                        <span class="badge-statut">Projet en cours</span>
                     </div>
                 </div>
             </article>
 
-            <article class="project-item reverse">
-                <div class="project-visual">
-                    <img src="images/cyber.png" alt="Challenge Cybersécurité" class="img-entiere">
+            <article class="article-projet inverse">
+                <div class="visuel-projet">
+                    <img src="images/cyber.png" alt="Challenge Cybersécurité" class="image-entiere">
                 </div>
-                <div class="project-info">
-                    <span class="project-year">Octobre 2024</span>
+                
+                <div class="info-projet">
+                    <span class="annee-projet">Octobre 2024</span>
                     <h2>CSAW CTF (Capture The Flag)</h2>
                     
-                    <div class="tech-tags">
-                        <span class="tech-tag">Linux</span>
-                        <span class="tech-tag">Cryptographie</span>
-                        <span class="tech-tag">Réseau</span>
+                    <div class="tags-technos">
+                        <span class="tag-techno">Linux</span>
+                        <span class="tag-techno">Cryptographie</span>
+                        <span class="tag-techno">Réseau</span>
                     </div>
                     
                     <p>
                         Participation au challenge international de cybersécurité CSAW. 
                         J'ai dû analyser des vulnérabilités systèmes et résoudre des énigmes de cryptographie.
                     </p>
-                    <ul class="project-details">
+                    <ul class="details-projet">
                         <li>🔒 <strong>Compétence :</strong> Analyse de vulnérabilités.</li>
                         <li>🏆 <strong>Résultat :</strong> 2ème place aux Olympiades NSI (référence pertinente).</li>
                     </ul>
 
-                    <div class="project-actions">
-                        <a href="https://www.csaw.io/" target="_blank" class="btn-line">
+                    <div class="actions-projet">
+                        <a href="https://www.csaw.io/" target="_blank" class="bouton-contour">
                             Voir le site du concours ↗
                         </a>
                     </div>
                 </div>
             </article>
 
-            <article class="project-item">
-                <div class="project-visual">
+            <article class="article-projet">
+                <div class="visuel-projet">
                     <img src="images/web.svg" alt="Site Web Portfolio">
                 </div>
-                <div class="project-info">
-                    <span class="project-year">2026</span>
+                
+                <div class="info-projet">
+                    <span class="annee-projet">2026</span>
                     <h2>Mon Portfolio Personnel</h2>
                     
-                    <div class="tech-tags">
-                        <span class="tech-tag">HTML5</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript</span>
+                    <div class="tags-technos">
+                        <span class="tag-techno">HTML5</span>
+                        <span class="tag-techno">CSS3</span>
+                        <span class="tag-techno">JavaScript</span>
                     </div>
                     
                     <p>
                         Conception et développement complet de ce site vitrine.
-                        Le site est responsive et respecte les consignes du module PEI (structure claire, code propre).
+                        Le site est responsive et respecte les consignes données.
                     </p>
-                    <ul class="project-details">
-                        <li>🎨 <strong>Design :</strong> Style minimaliste "Nude" & Typographie soignée.</li>
-                        <li>💻 <strong>Technique :</strong> Flexbox, Grid et Variables CSS.</li>
+                    <ul class="details-projet">
+                        <li>🎨 <strong>Concept :</strong> Site "mon parcours" faisant office de CV interactif.</li>
+                        <li>💻 <strong>Technique :</strong> HTML, JavaScript et Variables CSS.</li>
                     </ul>
 
-                    <div class="project-actions">
-                        <a href="https://github.com/NyKanto-R/Portfolio" target="_blank" class="btn-line">
-                            <span class="icon-github">📂</span> Voir le code sur GitHub
+                    <div class="actions-projet">
+                        <a href="https://github.com/NyKanto09/Site-Web-Mon-parcours" target="_blank" class="bouton-contour">
+                            <span class="icone-dossier">📂</span> Voir le code sur GitHub
                         </a>
                     </div>
                 </div>
@@ -138,10 +146,10 @@
         <div class="container">
             <p>© 2026 Ny Kanto R. - Étudiante ENSIBS</p>
             
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/ton-profil/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/NyKanto-R" target="_blank">GitHub</a>
-                <a href="https://www.facebook.com/ton-profil" target="_blank">Facebook</a>
+            <div class="reseaux-sociaux">
+                <a href="https://www.linkedin.com/in/nykanto-rasolofonjatovo" target="_blank">LinkedIn</a>
+                <a href="https://github.com/NyKanto09" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/share/1869oNF7mo/" target="_blank">Facebook</a>
             </div>
         </div>
     </footer>

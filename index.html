@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Lien du site sur github : https://nykanto09.github.io/Site-Web-Mon-parcours-->>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ny Kanto RASOLOFONJATOVO - Portfolio</title>
     
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Ny Kanto<span class="dot">.</span></div>
+    <nav class="menu-principal">
+        <div class="logo">Ny Kanto<span class="point-logo">.</span></div>
         
-        <ul class="menu">
-            <li><a href="#apropos" class="nav-anchor">À propos</a></li>
-            <li><a href="#competences" class="nav-anchor">Compétences</a></li>
+        <ul class="liens-navigation">
+            <li><a href="#apropos" class="lien-ancre">À propos</a></li>
+            <li><a href="#competences" class="lien-ancre">Compétences</a></li>
 
-            <li class="divider"></li>
+            <li class="separateur"></li>
 
-            <li><a href="parcours.html" class="nav-page">Parcours</a></li>
-            <li><a href="projets.html" class="nav-page">Portfolio</a></li>
-            <li><a href="contact.html" class="nav-page">Contact</a></li>
+            <li><a href="parcours.html" class="lien-page">Parcours</a></li>
+            <li><a href="projets.html" class="lien-page">Portfolio</a></li>
+            <li><a href="contact.html" class="lien-page">Contact</a></li>
 
             <li>
-                <a href="mon-cv.pdf" target="_blank" class="btn-cv-minimal">
+                <a href="mon-cv.pdf" target="_blank" class="bouton-cv">
                     CV 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
@@ -37,169 +39,172 @@
         </ul>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-layout">
+    <header class="en-tete-accueil">
+        <div class="container disposition-accueil">
             
-            <div class="hero-text">
-                <p class="subtitle">Étudiante Ingénieure & Passionnée</p>
-                <h1>Ny Kanto<br>Rasolofonjatovo<span class="dot">.</span></h1>
-                <p class="description">
-                    Future ingénieure en <strong>Cybersécurité</strong> à l'ENSIBS. 
+            <div class="texte-accueil">
+                <p class="sous-titre">Étudiante Ingénieure & Passionnée</p>
+                <h1>Ny Kanto<br>Rasolofonjatovo<span class="point-logo">.</span></h1>
+                
+                <p class="description" style="margin-bottom: 2.5rem; font-size: 1.1rem; line-height: 1.6;">
+                    Future ingénieure en <strong>Cybersécurité</strong> à l'ENSIBS.<br> 
                     J'aime créer, coder et sécuriser les systèmes de demain.
                 </p>
-                <div class="hero-buttons">
-                    <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
-                    <a href="parcours.html" class="btn btn-line">Mon CV</a>
+                
+                <div class="groupe-boutons">
+                    <a href="projets.html" class="bouton bouton-rose">Voir mes projets</a>
+                    <a href="parcours.html" class="bouton bouton-contour">Mon CV</a>
                 </div>
             </div>
             
-            <div class="hero-image-container">
+            <div class="image-accueil">
                 <img src="images/ma-photo.jpg" alt="Ny Kanto Rasolofonjatovo">
             </div>
         </div>
     </header>
 
-    <section id="apropos" class="about-section">
+    <section id="apropos" class="section-apropos">
         <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
+            <h2 class="titre-section">À propos de moi</h2>
 
-            <div class="tabs-container">
-                <button class="tab-btn" onclick="openTab(event, 'Profil')" id="defaultOpen">👤 Mon Profil</button>
-                <button class="tab-btn" onclick="openTab(event, 'Langues')">🌍 Langues</button>
-                <button class="tab-btn" onclick="openTab(event, 'SoftSkills')">🧠 Soft Skills</button>
-                <button class="tab-btn" onclick="openTab(event, 'Passions')">❤️ Passions</button>
+            <div class="conteneur-onglets">
+                <button class="bouton-onglet" onclick="ouvrirOnglet(event, 'Profil')" id="ongletDefaut">👤 Mon Profil</button>
+                <button class="bouton-onglet" onclick="ouvrirOnglet(event, 'Langues')">🌍 Langues</button>
+                <button class="bouton-onglet" onclick="ouvrirOnglet(event, 'SoftSkills')">🧠 Soft Skills</button>
+                <button class="bouton-onglet" onclick="ouvrirOnglet(event, 'Passions')">❤️ Passions</button>
             </div>
 
-            <div id="Profil" class="tab-content">
-                <div class="tab-text">
+            <div id="Profil" class="contenu-onglet">
+                <div class="texte-onglet">
                     <h3>Qui suis-je ?</h3>
                     <p>Je m'appelle <strong>Ny Kanto</strong>, j'ai 18 ans et je suis étudiante en 1ère année de cycle préparatoire intégré à l'<strong>ENSIBS Lorient</strong>.</p>
+                    <br>
                     <p>Originaire de Madagascar, je suis une personne très indépendante et rigoureuse. Mon parcours m'a menée du Lycée Alliance Française (Bac Mention TB) jusqu'à la Bretagne pour réaliser mon rêve : devenir ingénieure en Cybersécurité.</p>
                 </div>
-                <div class="tab-image">
+                <div class="image-onglet">
                     <img src="images/profil-large.webp" alt="Ny Kanto Profil">
                 </div>
             </div>
 
-            <div id="Langues" class="tab-content">
-                <div class="tab-text">
+            <div id="Langues" class="contenu-onglet">
+                <div class="texte-onglet">
                     <h3>Mes Langues</h3>
-                    <ul class="detailed-list">
+                    <ul class="liste-details">
                         <li><strong>🇫🇷 Français :</strong> Niveau C2 (Langue de scolarisation & maternelle).</li>
-                        <li><strong>🇬🇧 Anglais :</strong> Niveau C1 (Courant, capable de travailler en environnement anglophone).</li>
+                        <li><strong>EN Anglais :</strong> Niveau C1 (Courant, capable de travailler en environnement anglophone).</li>
                         <li><strong>🇲🇬 Malgache :</strong> Langue maternelle.</li>
                         <li><strong>🇪🇸 Espagnol :</strong> Niveau B1 (Notions scolaires).</li>
                     </ul>
                 </div>
-                <div class="tab-image">
+                <div class="image-onglet">
                     <img src="images/langues.jpg" alt="International">
                 </div>
             </div>
 
-            <div id="SoftSkills" class="tab-content">
-                <div class="tab-text">
+            <div id="SoftSkills" class="contenu-onglet">
+                <div class="texte-onglet">
                     <h3>Mes Atouts Personnels</h3>
-                    <div class="tags-large">
-                        <span class="tag">Rigueur & Organisation</span>
-                        <span class="tag">Autonomie</span>
-                        <span class="tag">Travail d'équipe</span>
-                        <span class="tag">Adaptabilité</span>
-                        <span class="tag">Aisance orale</span>
+                    <div class="groupe-tags">
+                        <span class="tag-competence">Rigueur & Organisation</span>
+                        <span class="tag-competence">Autonomie</span>
+                        <span class="tag-competence">Travail d'équipe</span>
+                        <span class="tag-competence">Adaptabilité</span>
+                        <span class="tag-competence">Aisance orale</span>
                     </div>
-                    <p style="margin-top: 1rem;">Grâce à mes expériences (comme ma mission chez <em>Ny Ask</em> ou mon stage chez <em>DHL</em>), j'ai appris à m'adapter rapidement au monde de l'entreprise.</p>
+                    <p style="margin-top: 1.5rem;">Grâce à mes expériences (comme ma mission chez <em>Ny Ask</em> ou mon stage chez <em>DHL</em>), j'ai appris à m'adapter rapidement au monde de l'entreprise.</p>
                 </div>
-                <div class="tab-image">
+                <div class="image-onglet">
                     <img src="images/teamwork.webp" alt="Travail d'équipe">
                 </div>
             </div>
 
-            <div id="Passions" class="tab-content">
-                <div class="tab-text">
+            <div id="Passions" class="contenu-onglet">
+                <div class="texte-onglet">
                     <h3>Ce qui m'anime</h3>
-                    <ul class="detailed-list">
+                    <ul class="liste-details">
                         <li><strong>🎭 Théâtre :</strong> Pratiqué depuis 2025 à l'UBS. M'aide pour la prise de parole en public.</li>
                         <li><strong>💃 Danse :</strong> Salsa, Ballroom et Step (3 ans de pratique).</li>
                         <li><strong>🤖 Robotique :</strong> Membre active du projet "Colossus 2.0" (Robot de sauvetage).</li>
                         <li><strong>🥋 Sport :</strong> Self-défense et Basket.</li>
                     </ul>
                 </div>
-                <div class="tab-image">
+                <div class="image-onglet">
                     <img src="images/hobbies.jpg" alt="Passions">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="competences" class="skills-section">
+    <section id="competences" class="section-competences">
         <div class="container">
-            <h2 class="section-title">Mes Compétences Techniques</h2>
+            <h2 class="titre-section">Mes Compétences Techniques</h2>
             
-            <div class="skills-categories">
+            <div class="grille-categories">
                 
-                <div class="skill-category">
-                    <h3>💻 Programmation</h3>
-                    <div class="skill-items">
-                        <div class="skill-card" style="--percent: 90%;">
-                            <span class="skill-name">Python</span>
-                            <span class="skill-percentage">90%</span>
-                            <div class="progress-bar"></div>
+                <div class="categorie">
+                    <h3 style="margin-bottom: 1.5rem;">💻 Programmation</h3>
+                    <div class="liste-competences">
+                        <div class="carte-competence" style="--pourcentage: 90%;">
+                            <span class="nom-competence">Python</span>
+                            <span class="pourcentage">90%</span>
+                            <div class="barre-progression"></div>
                         </div>
-                        <div class="skill-card" style="--percent: 75%;">
-                            <span class="skill-name">C / C++</span>
-                            <span class="skill-percentage">75%</span>
-                            <div class="progress-bar"></div>
+                        <div class="carte-competence" style="--pourcentage: 75%;">
+                            <span class="nom-competence">C / C++</span>
+                            <span class="pourcentage">75%</span>
+                            <div class="barre-progression"></div>
                         </div>
-                        <div class="skill-card" style="--percent: 60%;">
-                            <span class="skill-name">NXC (Robotique)</span>
-                            <span class="skill-percentage">60%</span>
-                            <div class="progress-bar"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>🌐 Web & Data</h3>
-                    <div class="skill-items">
-                        <div class="skill-card" style="--percent: 90%;">
-                            <span class="skill-name">HTML / CSS</span>
-                            <span class="skill-percentage">80%</span>
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div class="skill-card" style="--percent: 50%;">
-                            <span class="skill-name">JavaScript</span>
-                            <span class="skill-percentage">50%</span>
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div class="skill-card" style="--percent: 70%;">
-                            <span class="skill-name">SQL (Bases de données)</span>
-                            <span class="skill-percentage">80%</span>
-                            <div class="progress-bar"></div>
+                        <div class="carte-competence" style="--pourcentage: 60%;">
+                            <span class="nom-competence">NXC (Robotique)</span>
+                            <span class="pourcentage">60%</span>
+                            <div class="barre-progression"></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>🛠️ Outils & Systèmes</h3>
-                    <div class="skill-items">
-                        <div class="skill-card" style="--percent: 80%;">
-                            <span class="skill-name">Linux</span>
-                            <span class="skill-percentage">60%</span>
-                            <div class="progress-bar"></div>
+                <div class="categorie">
+                    <h3 style="margin-bottom: 1.5rem;">🌐 Web & Data</h3>
+                    <div class="liste-competences">
+                        <div class="carte-competence" style="--pourcentage: 80%;">
+                            <span class="nom-competence">HTML / CSS</span>
+                            <span class="pourcentage">80%</span>
+                            <div class="barre-progression"></div>
                         </div>
-                        <div class="skill-card" style="--percent: 40%;">
-                            <span class="skill-name">GitHub / Git</span>
-                            <span class="skill-percentage">40%</span>
-                            <div class="progress-bar"></div>
+                        <div class="carte-competence" style="--pourcentage: 50%;">
+                            <span class="nom-competence">JavaScript</span>
+                            <span class="pourcentage">50%</span>
+                            <div class="barre-progression"></div>
                         </div>
-                        <div class="skill-card" style="--percent: 95%;">
-                            <span class="skill-name">Pack Office</span>
-                            <span class="skill-percentage">95%</span>
-                            <div class="progress-bar"></div>
+                        <div class="carte-competence" style="--pourcentage: 80%;">
+                            <span class="nom-competence">SQL (Bases de données)</span>
+                            <span class="pourcentage">80%</span>
+                            <div class="barre-progression"></div>
                         </div>
-                         <div class="skill-card" style="--percent: 90%;">
-                            <span class="skill-name">Canva / Design</span>
-                            <span class="skill-percentage">90%</span>
-                            <div class="progress-bar"></div>
+                    </div>
+                </div>
+
+                <div class="categorie">
+                    <h3 style="margin-bottom: 1.5rem;">🛠️ Outils & Systèmes</h3>
+                    <div class="liste-competences">
+                        <div class="carte-competence" style="--pourcentage: 60%;">
+                            <span class="nom-competence">Linux</span>
+                            <span class="pourcentage">60%</span>
+                            <div class="barre-progression"></div>
+                        </div>
+                        <div class="carte-competence" style="--pourcentage: 40%;">
+                            <span class="nom-competence">GitHub / Git</span>
+                            <span class="pourcentage">40%</span>
+                            <div class="barre-progression"></div>
+                        </div>
+                        <div class="carte-competence" style="--pourcentage: 95%;">
+                            <span class="nom-competence">Pack Office</span>
+                            <span class="pourcentage">95%</span>
+                            <div class="barre-progression"></div>
+                        </div>
+                         <div class="carte-competence" style="--pourcentage: 90%;">
+                            <span class="nom-competence">Canva / Design</span>
+                            <span class="pourcentage">90%</span>
+                            <div class="barre-progression"></div>
                         </div>
                     </div>
                 </div>
@@ -208,51 +213,51 @@
         </div>
     </section>
 
-    <section class="projects-section">
+    <section class="section-projets">
         <div class="container">
-            <h2 class="section-title">Sélection de projets</h2>
+            <h2 class="titre-section">Sélection de projets</h2>
             
-            <div class="projects-grid">
+            <div class="grille-projets">
                 
-                <article class="project-card-safe">
-                    <div class="card-header">
+                <article class="carte-projet">
+                    <div class="haut-carte">
                         <img src="images/robot.png" alt="Robot Colossus">
                     </div>
-                    <div class="card-body">
-                        <h3>Robot Colossus 2.0</h3>
-                        <p>Robot de sauvetage autonome conçu en C++ et Arduino.</p>
-                        <a href="projets.html" class="link-arrow">Voir le détail →</a>
+                    <div class="bas-carte">
+                        <h3 style="margin-bottom: 0.5rem;">Robot Colossus 2.0</h3>
+                        <p style="margin-bottom: 1rem;">Robot de sauvetage autonome conçu en NXC</p>
+                        <a href="projets.html" class="lien-fleche">Voir le détail →</a>
                     </div>
                 </article>
 
-                <article class="project-card-safe">
-                    <div class="card-header">
-                        <img src="images/cyber.png" alt="CTF Cyber" class="img-entiere">
+                <article class="carte-projet">
+                    <div class="haut-carte">
+                        <img src="images/cyber.png" alt="CTF Cyber" class="image-entiere">
                     </div>
-                    <div class="card-body">
-                        <h3>Challenge CSAW</h3>
-                        <p>Analyse de vulnérabilités et cryptographie (CTF).</p>
+                    <div class="bas-carte">
+                        <h3 style="margin-bottom: 0.5rem;">Challenge CSAW</h3>
+                        <p style="margin-bottom: 1rem;">Analyse de vulnérabilités et cryptographie (CTF).</p>
                         
-                        <div class="card-links">
-                            <a href="projets.html" class="link-arrow">Détails</a>
-                            <span class="divider-small">|</span>
-                            <a href="https://www.csaw.io/" target="_blank" class="link-external">Site Officiel ↗</a>
+                        <div class="liens-carte">
+                            <a href="projets.html" class="lien-fleche">Détails</a>
+                            <span class="petit-separateur">|</span>
+                            <a href="https://www.csaw.io/" target="_blank" class="lien-externe">Site Officiel ↗</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="project-card-safe">
-                    <div class="card-header">
+                <article class="carte-projet">
+                    <div class="haut-carte">
                         <img src="images/web.svg" alt="Site Web">
                     </div>
-                    <div class="card-body">
-                        <h3>Mon Portfolio</h3>
-                        <p>Développement de ce site personnel en HTML/CSS.</p>
+                    <div class="bas-carte">
+                        <h3 style="margin-bottom: 0.5rem;">Mon Portfolio</h3>
+                        <p style="margin-bottom: 1rem;">Développement de ce site personnel en HTML/CSS.</p>
                         
-                        <div class="card-links">
-                            <a href="projets.html" class="link-arrow">Détails</a>
-                            <span class="divider-small">|</span>
-                            <a href="https://github.com/NyKanto-R/Portfolio" target="_blank" class="link-external">GitHub ↗</a>
+                        <div class="liens-carte">
+                            <a href="projets.html" class="lien-fleche">Détails</a>
+                            <span class="petit-separateur">|</span>
+                            <a href="https://github.com/NyKanto09/Site-Web-Mon-parcours" target="_blank" class="lien-externe">GitHub ↗</a>
                         </div>
                     </div>
                 </article>
@@ -265,10 +270,10 @@
         <div class="container">
             <p>© 2026 Ny Kanto R. - Étudiante ENSIBS</p>
             
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/ton-profil/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/NyKanto-R" target="_blank">GitHub</a>
-                <a href="https://www.facebook.com/ton-profil" target="_blank">Facebook</a>
+            <div class="reseaux-sociaux">
+                <a href="https://www.linkedin.com/in/nykanto-rasolofonjatovo" target="_blank">LinkedIn</a>
+                <a href="https://github.com/NyKanto09" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/share/1869oNF7mo/" target="_blank">Facebook</a>
             </div>
         </div>
     </footer>

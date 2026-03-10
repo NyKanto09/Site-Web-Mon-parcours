@@ -6,65 +6,70 @@
     <title>Me Contacter - Ny Kanto</title>
     
     <link rel="stylesheet" href="style.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">Ny Kanto<span class="dot">.</span></div>
-        <ul class="menu">
-            <li><a href="index.html" class="nav-page">Accueil</a></li>
-            <li class="divider"></li>
-            <li><a href="parcours.html" class="nav-page">Parcours</a></li>
-            <li><a href="projets.html" class="nav-page">Portfolio</a></li>
-            <li><a href="contact.html" class="nav-page active-page">Contact</a></li>
+    <nav class="menu-principal">
+        <div class="logo">Ny Kanto<span class="point-logo">.</span></div>
+        <ul class="liens-navigation">
+            <li><a href="index.html" class="lien-page">Accueil</a></li>
+
+            <li class="separateur"></li>
+
+            <li><a href="parcours.html" class="lien-page">Parcours</a></li>
+            <li><a href="projets.html" class="lien-page">Portfolio</a></li>
+            <li><a href="contact.html" class="lien-page">Contact</a></li>
+
             <li>
-                <a href="mon-cv.pdf" target="_blank" class="btn-cv-minimal">
+                <a href="mon-cv.pdf" target="_blank" class="bouton-cv">
                     CV 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 0 0-.708.708l3 3z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 0 0-.708.708l3 3z"/>
+                    </svg>
                 </a>
             </li>
         </ul>
     </nav>
 
-    <section class="contact-section">
-        <div class="container contact-layout">
+    <section class="section-contact">
+        <div class="container mise-en-page-contact">
             
-            <div class="contact-info">
-                <p class="subtitle">Parlons ensemble</p>
+            <div class="infos-contact">
+                <p class="sous-titre">Parlons ensemble</p>
                 <h1>Restons en contact</h1>
                 <p class="description">
                     Je suis actuellement à la recherche d'un <strong>stage en informatique</strong> à partir de mi-mai 2026.
                     N'hésitez pas à me contacter pour échanger sur des opportunités ou sur mes projets.
                 </p>
 
-                <div class="info-cards">
+                <div class="grille-cartes-info">
                     
-                    <div class="info-card">
-                        <div class="icon-circle">✉️</div>
+                    <div class="carte-info">
+                        <div class="cercle-icone">✉️</div>
                         <div>
                             <h3>Email</h3>
                             <a href="mailto:nykantoras09@gmail.com">nykantoras09@gmail.com</a>
                         </div>
                     </div>
 
-                    <div class="info-card">
-                        <div class="icon-circle">📍</div>
+                    <div class="carte-info">
+                        <div class="cercle-icone">📍</div>
                         <div>
                             <h3>Localisation</h3>
                             <p>Lorient, Bretagne, France</p>
                         </div>
                     </div>
 
-                    <div class="info-card">
-                        <div class="icon-circle">🔗</div>
+                    <div class="carte-info">
+                        <div class="cercle-icone">🔗</div>
                         <div>
                             <h3>Réseaux Sociaux</h3>
-                            <div class="social-links-contact">
-                                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                                <a href="https://github.com" target="_blank">GitHub</a>
+                            <div class="liens-sociaux-contact">
+                                <a href="https://www.linkedin.com/in/nykanto-rasolofonjatovo" target="_blank">LinkedIn</a>
+                                <a href="https://github.com/NyKanto09" target="_blank">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -72,47 +77,49 @@
                 </div>
             </div>
 
-            <div class="contact-card-rich">
+            <div class="grande-carte-contact">
     
                 <h2>Envie de discuter ?</h2>
                 
-                <p class="contact-intro">
+                <p class="introduction-contact">
                     Je suis toujours ravie d'échanger avec des professionnels, des étudiants ou des passionnés de tech. 
                     Que ce soit pour une opportunité ou juste pour le plaisir de partager, ma boîte mail est ouverte !
                 </p>
 
-                <div class="discussion-topics">
-                    <div class="topic-item">
-                        <span class="topic-icon">🎓</span>
-                        <div class="topic-text">
+                <div class="sujets-discussion">
+                    
+                    <div class="element-sujet">
+                        <span class="icone-sujet">🎓</span>
+                        <div class="texte-sujet">
                             <strong>Proposition de Stage</strong>
                             <span>Disponible à partir de mi-mai 2026</span>
                         </div>
                     </div>
 
-                    <div class="topic-item">
-                        <span class="topic-icon">🤖</span>
-                        <div class="topic-text">
+                    <div class="element-sujet">
+                        <span class="icone-sujet">🤖</span>
+                        <div class="texte-sujet">
                             <strong>Tech & Robotique</strong>
                             <span>Toujours partante pour un échange</span>
                         </div>
                     </div>
 
-                    <div class="topic-item">
-                        <span class="topic-icon">🔒</span>
-                        <div class="topic-text">
+                    <div class="element-sujet">
+                        <span class="icone-sujet">🔒</span>
+                        <div class="texte-sujet">
                             <strong>Cybersécurité</strong>
                             <span>Discuter CTF et vulnérabilités</span>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="email-highlight">
+                <div class="mise-en-avant-email">
                     <p>Mon adresse email directe :</p>
-                    <div class="email-box">nykantoras09@gmail.com</div>
+                    <div class="boite-email">nykantoras09@gmail.com</div>
                 </div>
 
-                <a href="https://www.linkedin.com/in/ton-profil/" target="_blank" class="btn btn-primary full-width">
+                <a href="https://www.linkedin.com/in/nykanto-rasolofonjatovo" target="_blank" class="bouton bouton-rose pleine-largeur">
                     Me contacter via LinkedIn ↗
                 </a>
 
@@ -124,10 +131,10 @@
         <div class="container">
             <p>© 2026 Ny Kanto R. - Étudiante ENSIBS</p>
             
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/ton-profil/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/NyKanto-R" target="_blank">GitHub</a>
-                <a href="https://www.facebook.com/ton-profil" target="_blank">Facebook</a>
+            <div class="reseaux-sociaux">
+                <a href="https://www.linkedin.com/in/nykanto-rasolofonjatovo" target="_blank">LinkedIn</a>
+                <a href="https://github.com/NyKanto09" target="_blank">GitHub</a>
+                <a href="https://www.facebook.com/share/1869oNF7mo/" target="_blank">Facebook</a>
             </div>
         </div>
     </footer>
